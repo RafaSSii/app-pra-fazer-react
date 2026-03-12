@@ -49,6 +49,13 @@ function RootLayoutNav() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
+        <Stack.Screen name="index" options={{headerShown: false}} />
+        <Stack.Screen name="user_create" 
+          options={{
+            headerTitle:'Criar Usuário',
+            headerShadowVisible: false,
+            headerTintColor: '#FFF',
+            headerStyle:{backgroundColor: '#F60'}}} />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
       </Stack>
