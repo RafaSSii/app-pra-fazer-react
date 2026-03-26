@@ -15,11 +15,11 @@ export default function CreateUser() {
     
 
     function userCreate(){
-            createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-         // Signed up 
-        const user = userCredential.user;
-        router.push ('/');
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+            // Signed up 
+            const user = userCredential.user;
+            router.push ('/');
     })
      .catch((error) => {
         const errorCode = error.code;
