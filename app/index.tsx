@@ -17,7 +17,7 @@ export default function Index() {
         .then((userCredential) => {
         // Signed in 
             const user = userCredential.user;
-            router.push('/(tabs)');
+            router.push('/tarefas');
             // ...
         })
         .catch((error) => {
